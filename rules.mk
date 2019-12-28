@@ -1,5 +1,5 @@
 
-DEFAULT_FOLDER = fancy65_ble/pro_v1
+DEFAULT_FOLDER = fancy65_ble/master
 
 NRF_DEBUG = no
 

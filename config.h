@@ -54,6 +54,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define RGB_DI_PIN 8     // The pin the LED strip is connected to
 //#define RGBLED_NUM 5     // Number of LEDs in your strip
 
+#define PROGMEM // arm-gcc does not interpret PROGMEM
+#define RGB_DI_PIN 8     // The pin the LED strip is connected to
+#ifdef RGBLED_BACK
+  #if HELIX_ROWS == 4
+    #define RGBLED_NUM 25
+  #else
+    #define RGBLED_NUM 32
+  #endif
+#else
+  #define RGBLED_NUM 6
+#endif
+
 /*
  * Feature disable options
  *  These options are also useful to firmware size reduction.
