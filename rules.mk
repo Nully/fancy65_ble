@@ -1,16 +1,18 @@
+# SRC += i2c.c
+# SRC += serial.c
+# SRC += ssd1306.c
 
 DEFAULT_FOLDER = fancy65_ble/master
 
 NRF_DEBUG = no
 
-MOUSEKEY_ENABLE = yes	# Mouse keys
-EXTRAKEY_ENABLE = yes	# Audio control and System control
-CONSOLE_ENABLE = yes	# Console for debug
-COMMAND_ENABLE = yes    # Commands for debug and configuration
-SLEEP_LED_ENABLE = yes  # Breathing sleep LED during USB suspend
+MOUSEKEY_ENABLE = no	# Mouse keys
+EXTRAKEY_ENABLE = no	# Audio control and System control
+CONSOLE_ENABLE = no	# Console for debug
+COMMAND_ENABLE = no    # Commands for debug and configuration
+SLEEP_LED_ENABLE = no  # Breathing sleep LED during USB suspend
 NKRO_ENABLE = no	    # USB Nkey Rollover
 CUSTOM_MATRIX = yes # This flag should be on for nrf52
-
 BACKLIGHT_ENABLE = no      # Enable keyboard backlight functionality
 MIDI_ENABLE = no            # MIDI controls
 AUDIO_ENABLE = no           # Audio output on port C6
